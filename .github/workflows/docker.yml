@@ -1,3 +1,4 @@
+ 
 name: Build and Push Docker Image
 
 on:
@@ -12,7 +13,8 @@ jobs:
     steps:
       # Step 1: Checkout code
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3mkdir -p .github/workflows
+
 
       # Step 2: Log in to Docker Hub using GitHub Secrets
       - name: Log in to Docker Hub
